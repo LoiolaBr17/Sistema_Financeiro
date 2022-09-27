@@ -1,11 +1,18 @@
-function App() {
-  
+import * as C from './App.styles';
+
+const App = () => {
 
   return (
-    <div className="App">
-      
-    </div>
-  )
+    <C.Container>
+      <C.Header>
+        <C.HeaderText>Sistema Financeiro</C.HeaderText>
+      </C.Header>
+
+      <C.Body>
+        ...
+      </C.Body>
+    </C.Container>
+  );
 }
 
-export default App
+export default App;
