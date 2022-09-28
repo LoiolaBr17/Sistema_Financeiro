@@ -30,9 +30,4 @@ export const formatDate = (date: Date): string => {
     return `${addZeroToDate(day)}/${addZeroToDate(month)}/${year}`;
 }
 
-const addZeroToDate = (n: number):string => {
-    if(n < 10){
-        return `0${n}`;
-    }
-    return `${n}`;
-}
+const addZeroToDate = (n: number):string => n < 10 ? `0${n}` : `${n}`;
