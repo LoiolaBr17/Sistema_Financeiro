@@ -66,7 +66,7 @@ const App = () => {
           expense={expense}
         />
 
-        <InputArea onAdd={handleAddItem} />
+        <InputArea onAdd={handleAddItem}/>
 
         <TableArea list={filteredList}/>
 
